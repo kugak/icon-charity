@@ -1,0 +1,23 @@
+{
+  "name": "icon-chairty",
+  "version": "1.0.0",
+  "description": "App to register users email for newletter",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kugak/icon-charity.git"
+  },
+  "author": "Kuga Kugaraja",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kugak/icon-charity/issues"
+  },
+  "homepage": "https://github.com/kugak/icon-charity#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0"
+  }
+}
