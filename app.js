@@ -66,7 +66,7 @@ app.post("/",  (req, res) => {
       company_name: req.body.company_name,
       receive_email: req.body.receive_email,
     };
-    new Guest(newGuest).save().then(idea => {
+    new Guest(newGuest).save().then(guest => {
       // req.flash("success_msg", "Thank you for registering! Enjoy the Dinner!");
       res.redirect("/");
     });
