@@ -92,8 +92,8 @@
       },
       submitHandler: function (form) {
           EnableDisableForm('Disable');
-          AjaxFormSubmit('registerForm', 'submit');
-          return false; // required to block normal submit since you used ajax
+        //   AjaxFormSubmit('registerForm', 'submit');
+          return true; // required to block normal submit since you used ajax
       }
   });
 
