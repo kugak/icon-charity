@@ -20,6 +20,10 @@ mongoose
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log(err));
 
+// Load Guest Model
+require('./models/Guest');
+const Guest = mongoose.model('guests');
+
 // Handle bar middleware
 app.engine('handlebars', exphbs({
   defaultLayout: 'main'
