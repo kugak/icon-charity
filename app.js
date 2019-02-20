@@ -73,6 +73,18 @@ app.post("/",  (req, res) => {
   }
 });
 
+// Guests Index Page
+app.get('/guests', (req, res) => {
+  Guest.find({})
+  .sort({date: 'desc'})
+  .then(guests => {
+    res.render('guests/index', {
+      guests:guests
+    });
+
+  });
+});
+
 
 // Static folder
 app.use(express.static(path.join(__dirname, "public")));
