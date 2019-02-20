@@ -4,6 +4,11 @@
  */
 
 /* Global */
+
+.table > tbody > tr > td {
+  vertical-align: middle;
+}
+
 body {
   margin: 0;
   padding: 0;
