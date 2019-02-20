@@ -1,5 +1,8 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
+const moment = require('moment');
+const Handlebars = require("handlebars");
+const MomentHandler = require("handlebars.moment");
 const path = require("path");
 const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
@@ -44,6 +47,10 @@ app.get("/", (req, res) => {
     title: title
   });
 });
+
+// Moment format
+MomentHandler.registerHelpers(Handlebars);
+
 
 // Process Form
 app.post("/",  (req, res) => {
