@@ -10,10 +10,10 @@ particlesJS('particles-js',
                 }
             },
             "color": {
-                "value": "#ffffff"
+                "value": "#99679a"
             },
             "shape": {
-                "type": "edge",
+                "type": "star",
                 "stroke": {
                     "width": 0,
                     "color": "#000000"
@@ -22,8 +22,8 @@ particlesJS('particles-js',
                     "nb_sides": 5
                 },
                 "image": {
-                    "src": "img/github.svg",
-                    "width": 100,
+                    "src": "../img/logo.jpg",
+                    "width": 500,
                     "height": 100
                 }
             },
@@ -32,16 +32,16 @@ particlesJS('particles-js',
                 "random": false,
                 "anim": {
                     "enable": false,
-                    "speed": 1,
+                    "speed": 2,
                     "opacity_min": 0.1,
                     "sync": true
                 }
             },
             "size": {
-                "value": 100,
+                "value": 20,
                 "random": true,
                 "anim": {
-                    "enable": false,
+                    "enable": true,
                     "speed": 20,
                     "size_min": 0.5,
                     "sync": false
@@ -62,7 +62,7 @@ particlesJS('particles-js',
                 "straight": false,
                 "out_mode": "out",
                 "attract": {
-                    "enable": false,
+                    "enable": true,
                     "rotateX": 600,
                     "rotateY": 1200
                 }
@@ -76,7 +76,7 @@ particlesJS('particles-js',
                     "mode": "repulse"
                 },
                 "onclick": {
-                    "enable": false,
+                    "enable": true,
                     "mode": "push"
                 },
                 "resize": true
@@ -99,7 +99,7 @@ particlesJS('particles-js',
                     "distance": 200
                 },
                 "push": {
-                    "particles_nb": 4
+                    "particles_nb": 10
                 },
                 "remove": {
                     "particles_nb": 2
