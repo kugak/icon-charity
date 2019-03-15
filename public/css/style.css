@@ -13,8 +13,14 @@ body {
   -webkit-touch-callout: none;
 }
 
+html,
 body {
-  margin: 0;
+  position: fixed;
+  overflow: hidden;
+}
+
+body {
+  margin-top: -20px;
   padding: 0;
   line-height: 1.85em;
   font-family: 'Poppins', sans-serif;
