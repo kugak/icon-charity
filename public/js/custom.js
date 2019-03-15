@@ -11,9 +11,23 @@
       $('.preloader').delay(50).fadeOut(100);
   });
 
-  document.documentElement.addEventListener('touchmove', function (event) {
-    event.preventDefault();      
-}, false);
+//   document.documentElement.addEventListener('touchmove', function (event) {
+//     event.preventDefault();      
+// }, false);
+
+// disable rubberband effect
+    var startY = 0;
+    document.addEventListener('touchstart', function(e) {
+        startY = e.touches[0].screenY;
+    });
+
+    document.addEventListener('touchmove', function(e) {
+        var amountMovedY = e.touches[0].screenY - startY;
+        if (amountMovedY > 0) {
+            e.preventDefault();
+        }
+    // Disable move action when movement amount is negative (user tries to positive to top!)
+    });
 
   /*
    * Ajax registration form
