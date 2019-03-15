@@ -22,6 +22,7 @@
     "express-handlebars": "^3.0.0",
     "handlebars.moment": "^1.0.4",
     "moment": "^2.24.0",
-    "mongoose": "^5.4.14"
+    "mongoose": "^5.4.14",
+    "serve-favicon": "^2.5.0"
   }
 }

@@ -10,6 +10,10 @@ const mongoose = require('mongoose');
 
 const app = express();
 
+// Favicon
+app.use('/favicon.ico', express.static('public/img/favicon.ico'));
+
+
 // Load routes
 const guests = require("./routes/guests");
 
