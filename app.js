@@ -96,7 +96,7 @@ app.get('/guests', (req, res) => {
 // Static folder
 app.use(express.static(path.join(__dirname, "public")));
 
-const port = 5050;
+const port = process.env.PORT || 5000;
 
 //Use routes
 app.use("/guests", guests);

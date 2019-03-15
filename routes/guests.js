@@ -28,7 +28,7 @@ router.post("/",  (req, res) => {
       receive_email: req.body.receive_email,
     };
     new Guest(newGuest).save().then(guest => {
-      // req.flash("success_msg", "Thank you for registering! Enjoy the Dinner!");
+      req.flash("success_msg", "Thank you for registering! Enjoy the Dinner!");
       res.redirect("../index");
     });
   }
