@@ -11,6 +11,10 @@
       $('.preloader').delay(50).fadeOut(100);
   });
 
+  document.documentElement.addEventListener('touchmove', function (event) {
+    event.preventDefault();      
+}, false);
+
   /*
    * Ajax registration form
    * -----------------------------------------------------------------------------
