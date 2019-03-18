@@ -11,6 +11,9 @@
 
 body {
   -webkit-touch-callout: none;
+  background-image: url('../img/bg.jpg');
+
+
 }
 
 #home {
