@@ -290,14 +290,6 @@ h2 {
   color: #ffffff;
 }
 
-.mainTitle .btn-ntPrimaryBorder {
-  /*color: #8a8986;*/
-}
-
-.mainTitle .btn-ntPrimaryBorder:hover {
-  /*border-color: #99679a;*/
-}
-
 .mainTitle .btn-ntPrimaryFull:hover {
   color: #ffffff;
   background-color: #99679a;
