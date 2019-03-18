@@ -11,6 +11,7 @@
 
 body {
   -webkit-touch-callout: none;
+  height: 120%;
 }
 
 html,
@@ -245,7 +246,7 @@ h2 {
 .ntHome {
   /* position: relative; */
   width: 100%;
-  height: 100%;
+  height: 120%;
   
   overflow: hidden;
   background-image: url('../img/bg.jpg');
