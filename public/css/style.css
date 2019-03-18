@@ -13,13 +13,13 @@ body {
   -webkit-touch-callout: none;
 }
 
-body {
+html {
   position: fixed;
   overflow: hidden;
 }
 
 body {
-  margin: 0px;
+  /* margin: 0px; */
   padding: 0;
   line-height: 1.85em;
   font-family: 'Poppins', sans-serif;
