@@ -11,7 +11,7 @@
 
 body {
   -webkit-touch-callout: none;
-  height: 120%;
+  height: 1176px !important;
 }
 
 html,
