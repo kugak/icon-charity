@@ -13,8 +13,8 @@ body {
   -webkit-touch-callout: none;
 }
 
-body {
-
+#home {
+  position: fixed;
   overflow: hidden;
 }
 
