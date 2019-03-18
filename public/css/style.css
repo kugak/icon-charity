@@ -11,14 +11,13 @@
 
 body {
   -webkit-touch-callout: none;
-  height: 1276px !important;
 }
 
-html,
+/* html,
 body {
   position: fixed;
   overflow: hidden;
-}
+} */
 
 body {
   margin: 0px;
