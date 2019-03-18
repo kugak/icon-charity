@@ -4,6 +4,8 @@ const moment = require('moment');
 const Handlebars = require("handlebars");
 const MomentHandler = require("handlebars.moment");
 const path = require("path");
+const flash = require('connect-flash');
+const session =require('express-session')
 const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
 
@@ -45,6 +47,26 @@ app.set('view engine', 'handlebars');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+// Sessions middleware
+app.use(session({
+  secret: 'secret',
+  resave: true,
+  saveUninitialized: true,
+}));
+
+// Connect flash middleware
+app.use(flash());
+
+// Global variabls
+app.use(function(req, res, next){
+  res.locals.success_msg = req.flash('success_msg');
+  res.locals.error_msg = req.flash('error_msg');
+  res.locals.error = req.flash('error');
+  next();
+
+});
+
+
 app.get("/", (req, res) => {
   const title = "Welcome";
   res.render("index", {
@@ -78,7 +100,7 @@ app.post("/",  (req, res) => {
       receive_email: req.body.receive_email,
     };
     new Guest(newGuest).save().then(guest => {
-      // req.flash("success_msg", "Thank you for registering! Enjoy the Dinner!");
+      req.flash("success_msg", "Thank you for registering! Enjoy the Dinner!");
       res.redirect("/");
     });
   }

@@ -5,6 +5,15 @@
 
 /* Global */
 
+div#overlay {
+  z-index: 20000;
+}
+
+.modal {
+  top: 35%;
+  text-align: center;
+}
+
 .table > tbody > tr > td {
   vertical-align: middle;
 }
