@@ -18,6 +18,11 @@ nav.navbar.sticky-top {
   color: #fff;
 }
 
+.navbar {
+  padding: 0.6rem 19rem;
+}
+
+
 div#overlay {
   z-index: 20000;
 }
