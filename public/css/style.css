@@ -9,6 +9,15 @@
   line-height: 1.2em;
 }
 
+.table-responsive-md {
+  font-size: .9em;
+}
+
+nav.navbar.sticky-top {
+  background-color: #99679a;
+  color: #fff;
+}
+
 div#overlay {
   z-index: 20000;
 }

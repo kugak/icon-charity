@@ -1,5 +1,5 @@
     {{> _nav}}
-    <div class="container table-responsive-md">
+    <div class="table-responsive-md">
         {{> _msg}}
         {{> _errors}}
         {{#if guests}}
@@ -19,8 +19,8 @@
 
     {{#each guests}}
     <tr {{#if receive_email}}class="table-success"{{/if}}>
-      <td>{{moment date "ll"}}<br>
-      {{moment date "h:mm:ss a"}}
+      <td>{{moment date "MMM D"}}
+      {{moment date "@ HH:mm:ss"}}
       </td>
       <td>{{first_name}}</td>
       <td>{{last_name}}</td>
