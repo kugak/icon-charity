@@ -26,9 +26,9 @@
     $('#overlay').modal('show');
 });
 
-setTimeout(function() {
-    $('#overlay').modal('hide');
-}, 5000);
+// setTimeout(function() {
+//     $('#overlay').modal('hide');
+// }, 5000);
 
   // request submission
   var EnableDisableForm = function (objectType, btn1, btn1Text) {
