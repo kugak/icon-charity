@@ -5,6 +5,10 @@
 
 /* Global */
 
+.container.table-responsive-md {
+  line-height: 1.2em;
+}
+
 div#overlay {
   z-index: 20000;
 }
@@ -20,7 +24,7 @@ div#overlay {
 
 body {
   -webkit-touch-callout: none;
-  background-image: url('../img/bg.jpg');
+  /* background-image: url('../img/bg.jpg'); */
   height: 2000px;
 
 }
