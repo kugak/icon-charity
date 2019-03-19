@@ -100,7 +100,7 @@ app.post("/",  (req, res) => {
       receive_email: req.body.receive_email,
     };
     new Guest(newGuest).save().then(guest => {
-      req.flash("success_msg", "Thank you for registering. <br> Enjoy the Dinner!");
+      req.flash("success_msg", "THANK YOU FOR REGISTERING!");
       res.redirect("/");
     });
   }

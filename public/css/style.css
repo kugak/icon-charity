@@ -3,8 +3,12 @@
  * -----------------------------------------------------------------------------
  */
 
- p#success-msg {
+ #success-msg {
   margin-top: 50px;
+  font-size: 1.1em;
+  color: #99679a;
+  font-family: 'Quattrocento', serif;
+  font-weight: 600;
 }
 
 .modal-body {
