@@ -169,7 +169,7 @@ div#overlay {
 body {
   -webkit-touch-callout: none;
   /* background-image: url('../img/bg.jpg'); */
-  /* height: 2000px; */
+  height: 2000px;
 
 }
 
